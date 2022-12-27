@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,300;0,800;1,200;1,400;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #d3ad7f;
+    border-radius: 5rem;
+}
+body{
+    font-family:'Prompt', sans-serif; 
+    outline: none;
+    text-decoration: none;
+    line-height: 1.5;
+    background-color:#010103;
+}
+
+/*---Barra de navegaciön---*/
+
+.logo-img{
+    padding-top: 5px;
+    margin-left: 20px;
+}
+
+.navbar-item a {
+    color: #fff;
+    text-decoration: none;
+    margin:3px;
+    transition: 0,3s;
+    font-size: 1.3rem;
+    text-transform: uppercase; 
+}
+.navbar-item a:hover{
+    color: #d3ad7f;
+    border-bottom:1px solid rgb(255, 255, .3); 
+    padding-bottom: 1px;
+}
+
+/*---iconos---*/
+
+#navbarNav {
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+}
+#navbarNav :hover{
+    color: #d3ad7f;
+   overflow: hidden;
+   transition: .1s;
+}
+
+/*--- fin iconos---*/
+
+
+/*--- inicio---*/
+
+section{
+    padding: 2rem 5%;
+}
+.inicio{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("assets/img/home-img.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.inicio .content{
+    max-width:50rem ;
+}
+.inicio .content h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color:#d3ad7f;
+}
+span{
+    color: #fff;
+    font-weight: 300;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.6rem 3rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #010103;
+    cursor: pointer;
+    border-radius: 5rem;
+    border: 2px solid #d3ad7f;
+}
+.btn:hover{
+    background: #fff;
+    color: #010103;
+    text-transform: uppercase;
+}
+/*--- pie de pagina---*/
+
+.footer{
+    background: #010103;
+    border-top: 1px solid #d3ad7f;
+    padding: 25px 0;
+    overflow: hidden;
+}    
+.footer .sociales{
+    text-align: center;
+    padding-bottom: 25px;  
+}
+.footer .sociales a{
+    font-size: 24px;
+    color:#fff ;
+    border: 1px solid rgb(255, 255, .3);
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: t;
+}
+.footer .sociales a:hover{
+    background-color: #d3ad7f;
+    transform: scale(1.1) translateY(-4px);
+
+}
+.footer .lista{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;   
+}
+.footer .lista .lista__link {
+    display: inline-block;
+    padding: 5px;
+}
+.footer .lista .lista__link a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer .lista .lista__link a:hover{
+    color: #d3ad7f;
+    border-bottom:1px solid rgb(255, 255, .3); 
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color:#d3ad7f ;
+}
+/*-----FIN DE FOOTER---*/
+
+/*-----SECCIÓN NOSOTROS----*/
+main{
+    padding: 4rem 4rem;
+}
+.abaut__titulo  h1{
+    font-size:3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d3ad7f;
+    padding-bottom: 2rem;  
+}
+.abaut{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+
+.abaut > img{
+    max-width: 100%;
+    grid-column: 1/6;
+    grid-row: 1/3;
+    border-radius: 5px;
+}
+.abaut__info{
+    grid-column: 5/9;
+    grid-row: 2/3;
+    background-color: #010103;
+    padding: 4rem;
+    text-align: center;
+    border-radius: 1px;
+} 
+.abaut__info:hover{
+    cursor: pointer;
+    background: linear-gradient(-45deg,#fc5406,#4f362b,#010103);
+}   
+.abaut__info h2{
+   font-size: 2.3rem;
+   text-align: center;
+   font-weight: 300;
+   color: #d3ad7f;
+}    
+.abaut__info p{
+    font-style: 1rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+/* --------FIN DE SECCIÓN NOSOTROS------*/
+/*----COMIENZO DE SECCIÓN MENU---*/
+.menu{
+    padding: 4rem 4rem;
+}
+.menu .titulo h1{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d3ad7f;
+    padding-bottom: 2rem;    
+}
+.grid{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "card1 card1"
+    "card2 card3"
+    ;
+    gap: 3rem;
+}
+.grid__card1{
+   grid-area: card1;
+   background-image: url("assets/img/Macchiato.jpg");
+   height: 400px;
+}
+.grid__card2{
+   grid-area: card2;
+   background-image: url("assets/img/latte.jpg"); 
+}
+.grid__card3{
+    grid-area: card3;
+    background-image: url("assets/img/card2.jpg");
+}
+.grid__card{
+    border-radius: 1rem;
+    border: 3px solid #d3ad7f;
+    background-size: cover;
+    background-position: center center;
+    padding: 4rem;
+}
+.grid__card h4{
+    color:#010103;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.grid__card h5{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.grid__precio{
+    color: #fff;
+    font-size: 30px;
+    width: 0;
+    text-align: center;
+    font-weight: 600;
+}
+/*----FIN SECCIÓN MENU-----*/
+
+/*----SECCIÓN PRODUCTOS---*/
+
+.producto{
+    padding: 4rem 4rem;
+}
+.producto__titulo h1{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d3ad7f;
+    padding-bottom: 2rem;   
+}
+ .caja{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:2rem;
+}
+.tarjeta{
+    text-align: center;
+    padding: 1.5rem;
+}
+.imagen{
+    padding: 2rem 0;
+}
+.imagen img{
+    height: 15rem;
+    transition: 1s;
+}
+.imagen img:hover{
+    transform: scale(1.1) translateY(-25px);
+    box-shadow: rgba(251, 253, 254, 0.861) 0px 10px 50px;
+}
+
+.tarjetas h4{
+    color: #d3ad7f;
+    font-size: 2rem;
+}
+ .tarjetas p{
+    color: #fff;
+    font-size: .0.7rem;
+    
+}
+.tarjeta__precio{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.tarjeta__precio span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+/*---SECCION CONTACTO---*/
+.contacto{
+    padding: 6rem 10rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 3rem;
+    align-items: center;
+}
+.contacto__titulo h1{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d3ad7f;
+    padding: 1rem;  
+}
+.contacto__form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nombre apellido"
+    "email teléfono"
+    "mensaje mensaje"
+    "barrio btn"
+    ;
+    width: 36rem;
+    gap: 2rem;
+    padding: 2rem;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.contacto__form:hover{
+    background: linear-gradient(-45deg,#fc5406,#4f362b,#010103);
+}
+.contacto__form input,
+.contacto__form textarea{
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    color: #d3ad7f;
+    border: 0;
+    border-right: none;
+    background: none;
+    outline: 0;
+    border-bottom: 2px solid #fff;
+}
+.contacto__form .nombre{
+    grid-area: nombre;
+}
+.contacto__form .apellido{
+    grid-area: apellido;
+}
+.contacto__form .email{
+    grid-area: email;
+}
+.contacto__form .teléfono{
+    grid-area: teléfono;
+}
+.contacto__form .mensaje{
+   grid-area: mensaje;
+}
+.contacto__form .barrio{
+    grid-area: barrio;
+ }
+.contacto__form .btn{
+   grid-area: btn;
+   text-transform: uppercase;
+   border-radius: 5rem;
+   border: 2px solid #d3ad7f;
+}
+/*---FIN DE CONTACTO---*/
+
+
+/*-- MOVIL RESPONSIVO--*/
+
+@media (max-width:480px){
+    .inicio{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+        background-image: url("assets/img/res.jpg");
+    }
+    .inicio .content h1{
+        font-size: 1.9rem;
+        color:#fff;
+        font-weight: 600;  
+    }
+    span{
+        color: #010103;
+    }
+    /*---SECCIÓN NOSOTROS---*/
+    main{
+        padding: 3rem 1.5rem;
+    }
+    .abaut__titulo  h1{
+        font-size: 1.9rem;
+    }
+    span{
+        color: #fff;
+    }
+    .abaut{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .abaut__info{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        background:linear-gradient(-45deg,#fc5406,#4f362b,#010103);
+        border: 1px solid #fff;
+        border-radius: 5px;
+        gap: 1rem;
+        }
+    .abaut__info h2{
+        font-size: 1.5rem;
+    }
+    .abaut__info p{
+        font-size: .85rem;
+        line-height: 1.8rem;
+    }
+    /*----Seccion menu---*/
+
+    .grid{
+        background-position: left;
+        display: flex;
+        flex-direction: column;
+    }
+    .grid__card{
+        flex: 1;
+    }
+    .menu .titulo h1{
+        font-size: 1.9rem;
+    }
+    .grid__card h5{
+        font-size: 1.9rem;
+    }
+    .grid__card h4{
+         font-size: 1.5rem;
+    }
+
+    /*----Sección productos---*/
+    
+    .producto__titulo h1{
+        font-size: 1.9rem;
+    }
+    .caja{
+        display: flex;
+        flex-direction: column;
+        gap: 1;
+    }
+    .tarjeta{
+        flex: 1;
+    }
+    .tarjetas h4{
+        font-size: 2rem;
+    }
+    .tarjetas p{
+        font-size: 1rem;
+    }
+
+    /*---Sección contacto---*/
+
+    .contacto__titulo h1{
+        font-size: 1.9rem;
+    }
+    .contacto{
+        padding: 2rem;
+        background-image: none;
+    }
+    .contacto__form{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        background: none;
+    }
+    
+       
+}
+
