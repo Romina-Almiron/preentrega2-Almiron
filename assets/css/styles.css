@@ -76,6 +76,7 @@ section{
 .inicio__img{
     min-width: 100hv;
     display: flex;
+    justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
