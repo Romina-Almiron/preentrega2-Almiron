@@ -74,9 +74,12 @@ section{
     background-position: center;*/
 }
 .inicio__img{
+    min-width: 100hv;
+    display: flex;
+    align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
 .inicio .content{
     max-width:50rem ;
