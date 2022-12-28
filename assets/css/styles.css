@@ -69,9 +69,14 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url("../assets/img/home-img.jpeg");
+    /*background-image: url("../assets/img/home-img.jpeg");
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
+}
+.inicio__img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 .inicio .content{
     max-width:50rem ;
@@ -400,7 +405,7 @@ main{
         background-position: left;
         justify-content: center;
         text-align: center;
-        background-image: url("/assets/img/res.jpg");
+        /*background-image: url("/assets/img/res.jpg*/
     }
     .inicio .content h1{
         font-size: 1.9rem;
