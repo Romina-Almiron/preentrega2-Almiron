@@ -231,16 +231,16 @@ main{
 }
 .grid__card1{
    grid-area: card1;
-   background-image: url("./assets/img/chocolate.jpg");
+   background-image: url("/assets/img/chocolate.jpg");
    height: 400px;
 }
 .grid__card2{
    grid-area: card2;
-   background-image: url("./assets/img/latte.jpg"); 
+   background-image: url("/assets/img/latte.jpg"); 
 }
 .grid__card3{
     grid-area: card3;
-    background-image: url("./assets/img/card2.jpg");
+    background-image: url("/assets/img/card2.jpg");
 }
 .grid__card{
     border-radius: 1rem;
@@ -400,7 +400,7 @@ main{
         background-position: left;
         justify-content: center;
         text-align: center;
-        background-image: url("./assets/img/res.jpg");
+        background-image: url("/assets/img/res.jpg");
     }
     .inicio .content h1{
         font-size: 1.9rem;
