@@ -445,7 +445,6 @@ main{
     /*----Seccion menu---*/
 
     .grid{
-        background-position: left;
         display: flex;
         flex-direction: column;
     }
