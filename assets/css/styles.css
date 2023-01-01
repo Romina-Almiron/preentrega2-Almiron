@@ -69,16 +69,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    /*background-image: url("../assets/img/home-img.jpeg");
-    background-size: cover;
-    background-position: center;*/
-}
-.inicio__img{
-    min-width: 100hv;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
+    background-image: url("../img/sincolor.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -409,7 +400,7 @@ main{
         background-position: left;
         justify-content: center;
         text-align: center;
-        /*background-image: url("/assets/img/res.jpg*/
+        background-image: url("../img/res.jpg");
     }
     .inicio .content h1{
         font-size: 1.9rem;
