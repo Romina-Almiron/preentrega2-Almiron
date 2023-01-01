@@ -240,16 +240,16 @@ main{
 }
 .grid__card1{
    grid-area: card1;
-   background-image: url("/assets/img/chocolate.jpg");
+   background-image: url("../img/chocolate.jpg");
    height: 400px;
 }
 .grid__card2{
    grid-area: card2;
-   background-image: url("/assets/img/latte.jpg"); 
+   background-image: url("../img/latte.jpg"); 
 }
 .grid__card3{
     grid-area: card3;
-    background-image: url("/assets/img/card2.jpg");
+    background-image: url("../img/card2.jpg");
 }
 .grid__card{
     border-radius: 1rem;
